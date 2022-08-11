@@ -1,9 +1,158 @@
+$c-main: #446644;
+$c-warning: #664444;
+
+*, body {
+  font-family: 'Montserrat', 'Noto Sans JP';
+}
 .l-content {
   background: tomato;
-}
-
-.b-width {
   width: 480px;
   margin: 0 auto;
   background: #fff;
+  position: relative;
+}
+a {
+  transition: 0.3s opacity;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.l-room-create {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1;
+  background: $c-main;
+  width: 50px;
+  height: 50px;
+  border-radius: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: auto;
+  right: auto;
+  bottom: 15px;
+  cursor: pointer;
+  transition: 0.3s all;
+  &:hover {
+    opacity: 0.8;
+  }
+  span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.l-header {
+  background: $c-main;
+  box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.2);
+  position: fixed;
+  z-index: 1;
+  width: 480px;
+  top: 0;
+  left: auto;
+  right: auto;
+}
+
+.l-main {
+  padding-top: 50px;
+}
+
+.header-flexcontainer {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .header-home_icon,
+  .header-setting_icon {
+    img {
+      display: block;
+      width: 20px;
+      height: auto;
+    }
+  }
+}
+
+.b-width {
+  padding: 0 15px;
+}
+
+.room {
+  .room-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .room-item_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    .room-item_text {
+      p {
+        font-size: 12px;
+        color: #333;
+        span {
+          &.date {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .room-delete {
+      p {
+        font-size: 12px;
+        color: $c-warning;
+      }
+    }
+  }
+  .room-item_bottom {
+    .room-item_bottom-inner {
+      display: flex;
+      position: relative;
+      .room-item_block {
+        width: 80px;
+        height: 80px;
+        background: tomato;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+        background: #aaa;
+        &.person {
+          background: #D8B117;
+          p {
+            font-size: 18px;
+          }
+        }
+        + .room-item_block {
+          margin-left: 10px;
+        }
+        p {
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 1;
+          color: #fff;
+          &.small {
+            font-size: 10px;
+            padding-bottom:10px;
+          }
+        }
+      }
+      &:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid $c-main;
+        border-right: 2px solid $c-main;
+        position: absolute;
+        top: 45%;
+        right: 5px;
+        transform: rotate(45deg) translateY(-50%);
+      }
+    }
+  }
 }
