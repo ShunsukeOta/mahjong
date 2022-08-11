@@ -1,6 +1,3 @@
-$c-main: #446644;
-$c-warning: #664444;
-
 *, body {
   font-family: 'Montserrat', 'Noto Sans JP';
 }
@@ -112,7 +109,7 @@ a {
       display: flex;
       position: relative;
       .room-item_block {
-        width: 80px;
+        width: calc(33.333% - 20px);
         height: 80px;
         background: tomato;
         display: flex;
@@ -153,5 +150,19 @@ a {
         transform: rotate(45deg) translateY(-50%);
       }
     }
+  }
+}
+
+
+.l-inner-width {
+  padding: 0 15px;
+  @include mq(sp) {
+    padding: 0 10px;
+  }
+  @include mq(tb) {
+    padding: 0 10px;
+  }
+  @include mq(pc) {
+    padding: 0 10px;
   }
 }
