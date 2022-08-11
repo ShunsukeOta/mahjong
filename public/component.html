@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <title>TOP | Mahjong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/style.css">
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- <div id="root"></div> -->
+    <div class="l-content">
+
+    <div class="l-inner-width">
+
+      <p class="component-title">丸ボタンレイアウト</p>
+      <div class="c-circle-btn_plus"></div>
+      <div class="c-circle-btn_next"></div>
+      <div class="c-circle-btn_prev"></div>
+
+      <p class="component-title">四角ボタンレイアウト 色3種</p>
+      <div class="c-square-btn_main"><span class="inner-text">決定</span></div>
+      <div class="c-square-btn_warning"><span class="inner-text">削除</span></div>
+      <div class="c-square-btn_gray"><span class="inner-text">戻る</span></div>
+
+      <p class="component-title">四角ボタンレイアウト 50%センター表示</p>
+      <div class="c-square-btn_gray c-square-btn_half"><span class="inner-text">戻る</span></div>
+
+      <p class="component-title">四角ボタンレイアウト 2つ横並び</p>
+      <div class="l-flexbox_column2">
+        <div class="l-flexbox_inner">
+          <div class="c-square-btn_main"><span class="inner-text">決定</span></div>
+          <div class="c-square-btn_warning"><span class="inner-text">削除</span></div>
+        </div>
+      </div>
+
+      <p class="component-title">四角ボタンレイアウト 3つ横並び</p>
+      <div class="l-flexbox_column3">
+        <div class="l-flexbox_inner">
+          <div class="c-square-btn_main"><span class="inner-text">決定</span></div>
+          <div class="c-square-btn_warning"><span class="inner-text">削除</span></div>
+          <div class="c-square-btn_gray"><span class="inner-text">戻る</span></div>
+        </div>
+      </div>
+
+      <p class="component-title">モーダル ラベルあり</p>
+      <div class="c-modal">
+        <div class="c-modal-label">
+          <p class="c-modal-label-text">部屋の削除</p>
+        </div>
+        <div class="c-modal-inner">
+          <div class="c-modal-content">
+            <p class="c-modal-content-text">「〇〇〇〇」部屋を削除しますか？</p>
+          </div>
+          <div class="l-flexbox_column2">
+            <div class="l-flexbox_inner">
+              <div class="c-square-btn_gray"><span class="inner-text">戻る</span></div>
+              <div class="c-square-btn_warning"><span class="inner-text">削除</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="component-title">モーダル ラベルなし</p>
+      <div class="c-modal">
+        <div class="c-modal-inner">
+          <div class="c-modal-content">
+            <p class="c-modal-content-text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+          </div>
+          <div class="c-square-btn_gray c-square-btn_half"><span class="inner-text">戻る</span></div>
+        </div>
+      </div>
+
+      <p class="component-title">Component</p>
+    </div>
+    </div>
+  </body>
+</html>
