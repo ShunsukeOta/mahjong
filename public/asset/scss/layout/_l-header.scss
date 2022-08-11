@@ -1,0 +1,9 @@
+.l-inner-width {
+  padding: 0 50px;
+  @include mq(tb) {
+    padding: 30px;
+  }
+  @include mq(sp) {
+    padding: 0 15px;
+  }
+}
