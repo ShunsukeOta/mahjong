@@ -171,7 +171,7 @@ a:hover {
   position: relative;
 }
 .room .room-item_bottom .room-item_bottom-inner .room-item_block {
-  width: 80px;
+  width: calc(33.333% - 20px);
   height: 80px;
   background: tomato;
   display: -webkit-box;
@@ -224,4 +224,23 @@ a:hover {
   right: 5px;
   -webkit-transform: rotate(45deg) translateY(-50%);
           transform: rotate(45deg) translateY(-50%);
+}
+
+.l-inner-width {
+  padding: 0 15px;
+}
+@media screen and (max-width: 767px) {
+  .l-inner-width {
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .l-inner-width {
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .l-inner-width {
+    padding: 0 10px;
+  }
 }
