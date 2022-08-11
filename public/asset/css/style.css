@@ -257,6 +257,8 @@ a:hover {
 }
 
 .l-inner-width {
+  max-width: 768px;
+  margin: 0 auto;
   padding: 0 50px;
 }
 @media screen and (min-width: 768px) {
@@ -405,4 +407,53 @@ a:hover {
 .l-flexbox_column3 .l-flexbox_inner > div {
   width: 33.3333%;
   margin: 0 5px;
+}
+
+.component-title {
+  margin-top: 60px;
+  background: #333;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.c-modal {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.c-modal .c-modal-label {
+  background: #446644;
+  border-radius: 10px 10px 0 0;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.c-modal .c-modal-label .c-modal-label-text {
+  font-size: 1.6rem;
+  color: #fff;
+}
+.c-modal .c-modal-content {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.c-modal .c-modal-content .c-modal-content-text {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0 40px;
+}
+.c-modal .c-modal-inner {
+  padding: 20px;
 }
