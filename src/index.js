@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import './index.css';
+// import reportWebVitals from './reportWebVitals';
 
 
 // import home from './asset/images/icon/icon-home.png';
@@ -15,4 +15,4 @@ import reportWebVitals from './reportWebVitals';
 //   </React.StrictMode>
 // );
 
-reportWebVitals();
+// reportWebVitals();
