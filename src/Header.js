@@ -1,3 +1,3 @@
-import React from "react";
-import bgImage from "../images/mountain.jpg";
+// import React from "react";
+// import bgImage from "../images/mountain.jpg";
 
