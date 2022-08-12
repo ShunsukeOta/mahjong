@@ -1,0 +1,29 @@
+form {
+  width: 100%;
+}
+
+.c-input {
+  &_radio {
+    label {
+      cursor: pointer;
+      input {
+        display: none;
+      }
+      span {
+        background: #fff;
+        border: 1px solid $c-main;
+        display: inline-block;
+        border-radius: 50vh;
+        color: $c-main;
+        padding: 5px 20px;
+        user-select: none;
+      }
+      input:checked {
+        + span {
+          background: $c-main;
+          color: #fff; 
+        }
+      }
+    }
+  }
+}
