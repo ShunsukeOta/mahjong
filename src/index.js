@@ -14,5 +14,5 @@
 
 //   </React.StrictMode>
 // );
-
-// reportWebVitals();
+serviceWorkerRegistration.register();
+reportWebVitals();
