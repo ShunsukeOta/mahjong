@@ -1,0 +1,26 @@
+.l-contents {
+  background: #fff;
+  position: relative;
+
+  .l-inner-width {
+    padding: 0 50px;
+    @include mq(tb) {
+      padding: 0 30px;
+    }
+    @include mq(sp) {
+      padding: 0 15px;
+    }
+  }
+}
+
+.l-box {
+  .l-box-inner {
+
+    background: #aaa;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
