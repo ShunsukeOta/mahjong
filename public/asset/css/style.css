@@ -457,3 +457,30 @@ a:hover {
 .c-modal .c-modal-inner {
   padding: 20px;
 }
+
+form {
+  width: 100%;
+}
+
+.c-input_radio label {
+  cursor: pointer;
+}
+.c-input_radio label input {
+  display: none;
+}
+.c-input_radio label span {
+  background: #fff;
+  border: 1px solid #446644;
+  display: inline-block;
+  border-radius: 50vh;
+  color: #446644;
+  padding: 5px 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.c-input_radio label input:checked + span {
+  background: #446644;
+  color: #fff;
+}
