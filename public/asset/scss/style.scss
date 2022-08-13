@@ -10,9 +10,9 @@
 
 // Layout
 // ++++++++++++++++++++++++++++++++++++++++++++++++++
-@import 'layout/l-header';
-@import 'layout/l-main';
-@import 'layout/l-footer';
+@import 'layout/l-base';
+@import 'layout/l-flex';
+
 
 // Component
 // ++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -21,6 +21,7 @@
 
 // Project
 // ++++++++++++++++++++++++++++++++++++++++++++++++++
-// @import 'project/';
+@import 'project/header';
+@import 'project/room';
 
 

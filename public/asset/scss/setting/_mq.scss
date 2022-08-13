@@ -1,9 +1,9 @@
 // MediaQuery
 
 $breakpoint: (
-  sp: 'screen and (max-width: 767px)',
-  tb: 'screen and (min-width: 768px)',
-  pc: 'screen and (min-width: 1025px)'
+  sp: 'screen and (max-width: 480px)',
+  tb: 'screen and (max-width: 1025px)',
+  pc: 'screen and (max-width: 1200px)'
 );
 
 @mixin mq($bp) {
