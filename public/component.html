@@ -79,9 +79,7 @@
 
       <p class="component-title">INPUT系</p>
 
-      <form>
-        <!-- <fieldset> -->
-
+      <form action="">
           <div class="l-form-group">
             <div class="c-input_radio">
               <label><input type="radio" name="group01" checked><span>3人麻雀</span></label><label><input type="radio" name="group01"><span>4人麻雀</span></label>
@@ -93,24 +91,32 @@
 
           <div class="l-form-group">
             <div class="c-input_text">
-              <label>カスタム<input type="text" name="group01"></label>
+              <label>カスタム<input type="text" name="name" value="safoisandoia"></label>
             </div>
           </div>
 
           <div class="l-form-group">
             <div class="c-input_select">
-              <select>
+              <select name="select">
                 <option >1</option>
-                <option >2</option>
+                <option value="2" checked>2</option>
                 <option >3</option>
               </select>
             </div>
           </div>
-
-        <!-- </fieldset> -->
+          <button type="submit"></button>
       </form>
 
     </div>
     </div>
   </body>
 </html>
+
+{
+  gropu1: '３',
+  group2: '25000',
+  name: 'safoisandoia',
+  select: 2,
+}
+
+$_POST.group1
